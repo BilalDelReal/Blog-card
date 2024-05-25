@@ -1,0 +1,90 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+html, body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    font-family: Figtree , sans-serif;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*.content, .container, .text, .author{*/
+/*    border: solid 2px;*/
+/*}*/
+.container{
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border: solid 2px;
+    width: 384px;
+    box-shadow: black 8px 8px;
+}
+.content{
+    margin: 24px;
+}
+.text{
+    margin: 24px 0 24px 0;
+}
+.img>img{
+    border-radius: 10px;
+    width: 100%;
+}
+.state{
+    background-color:hsl(47, 88%, 63%);
+    padding: 4px 12px 4px 12px;
+    width: max-content;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.date{
+    margin: 12px 0;
+}
+.title-of-theme{
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.paragraph {
+    color:hsl(0, 0%, 50%);
+}
+.img-author{
+    width: 32px;
+}
+.name-of-author{
+    font-weight: 800 ;
+    margin-inline-start: 12px;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+@media screen and (max-width: 375px){
+    .container{
+        width: 327px;
+    }
+}
+.title-of-theme:hover{
+    cursor: pointer;
+    user-select: none;
+
+}
+.title-of-theme:active {
+    color: hsl(47, 88%, 63%);
+}
+.container:active{
+    box-shadow:black 16px 16px; ;
+}
